@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="9"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:id="@+id/horizontakscrolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:scrollHorizontally="true"
+            android:id="@+id/txtexptrstion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="viewEnd"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/textviewtexbig" />
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtjavab"
+        android:textColor="#8C8989"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/textviewtexsmall"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/graylaight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TableLayout
+        android:weightSum="5"
+        android:layout_weight="5.25"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_size"
+                android:textColor="?attr/colorSecondary"
+                android:text="AC"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnparantezBaz"
+                android:layoutDirection="rtl"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_size"
+                android:textColor="?attr/colorSecondary"
+                android:text=")"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnparantezBAste"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_size"
+                android:textColor="?attr/colorSecondary"
+                android:text=")"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btndevice"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorSecondary"
+                android:text="/"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnsevin"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btneight"
+                android:layoutDirection="rtl"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnnine"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="9"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnzarb"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorSecondary"
+                android:text="*"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnfour"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnfive"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnsix"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnmainez"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorSecondary"
+                android:text="-"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnone"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btntwo"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnthree"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnplus"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorSecondary"
+                android:text="+"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnpakidn"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_size"
+                android:textColor="?attr/colorSecondary"
+                android:layoutDirection="rtl"
+                android:text=">"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnzero"
+                android:layoutDirection="rtl"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnnoghte"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textSize="@dimen/butten_text_2size_big"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="."
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/btnmosavi"
+                    android:background="@drawable/shape_circle"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:textSize="@dimen/butten_text_2size_big"
+                    android:text="="
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </FrameLayout>
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>
